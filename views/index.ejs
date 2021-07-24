@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body style="background-color: <%= cor %> ;">
+    <h1>Bem vindo!!! <%= typeof usuario !== "undefined" ? `Olá ${usuario.nome}`: "Faça Login" %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <a href="/login">Login</a>
+    <a href="/cadastro">Cadastro</a>
+
+    <a href="/logout">Sair</a>
+  </body>
+</html>
