@@ -4,13 +4,34 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body style="background-color: <%= cor %> ;">
-    <h1>Bem vindo!!! <%= typeof usuario !== "undefined" ? `Olá ${usuario.nome}`: "Faça Login" %></h1>
-    <p>Welcome to <%= title %></p>
+  <body >
+    <header>
+      <div class="logo">
+        <img src="/images/logo.png" alt="logotipo">
+      </div>
+      <div>
+        <% if(typeof usuario !== "undefined"){ %>
+        <p>Bem vindo, <%= usuario.nome %></p>
+        <p>aqui você terá a melhor experiência de compras da sua vida!</p>
+      </div>
+      <div>
+        <a href="/logout">
+          <button>Sair</button>
+        </a>
+      <% } else { %>
+      </div>
+      <div>
+          Olá, faça seu <a href="/login">Login</a> ou <a href="/cadastro">Cadastra-se</a>
+      </div>
+      <% } %>
 
-    <a href="/login">Login</a>
-    <a href="/cadastro">Cadastro</a>
+    </header>
+    <main>
+      <h1>A melhor experiência em compras da sua vida começa aqui</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FBbcT_3gnpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
-    <a href="/logout">Sair</a>
+
+    </main>
   </body>
 </html>

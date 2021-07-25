@@ -3,6 +3,76 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+button {
+  margin: 10px;
+  width: 180px;
+  border-radius: 20px;
+  background-color: gray;
+  border: 1px solid black;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form {
+  border: black solid 2px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
 a {
   color: #00B7FF;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  text-align: justify;
+  margin: 20px 60px;
+  background-color: #eee;
+  color: red;
+  max-width: 300px;
+  width: 100%;
+  border: yellow solid 3px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+iframe {
+  height: 360px;
+  width: 640px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos {
+  display: flex;
+  margin: 20px 20px;
 }

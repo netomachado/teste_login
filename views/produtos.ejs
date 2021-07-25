@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="<%= tema %>">
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="imagem logo">
+        </div>
+        <div >
+            <p> Bem vindo <%= usuario.nome %></p>
+        <a href="/logout">
+        <button>Sair</button>
+        </a>
+        <a href="/">
+            <button>Pagina Inicial</button>
+            </a>
+        </div>
+        
+    </header>
+    <main>
+        <p>Escolha um produto</p>
+        <section class="produtos">
+            <div class="cards">
+                <img src="/images/bicicleta.jpg" alt="imagem1">
+                <div class="flag">
+                    <p class="preco">$ 1,200</p>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa</p>
+            </div>
+            <div class="cards">
+                <img src="/images/patinete.jpg" alt="imagem2">
+                <div class="flag">
+                    <p class="preco">$ 2,000</p>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -13,23 +13,15 @@
             <img src="/images/logo.png" alt="imagem logo">
         </div>
         <div class="menu">
-            <p>Faça seu cadastro abaixo</p>
+            <p>Faça seu login abaixo</p>
         </div>
     </header>
-    <form class="form" action="/cadastro" method="POST">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+    <form class="form" action="/login" method="POST">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Digite seu email" required>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
         
-        <label for="tema">Tema</label>
-        <select name="tema" id="tema">
-            <option disabled selected>Escolha um tema</option>
-            <option value="dark-mode">Tema Dark</option>
-            <option value="light-mode">Tema Light</option>
-        </select>
         <button type="submit">Logar</button>
     </form>
 </body>
