@@ -39,11 +39,13 @@ router.get('/login', function(req, res, next) {
 router.post('/login', function(req, res, next){
   const { email, senha } = req.body;
 
-  loginControllers.efetuarLogin(email, senha);
   
+  let usuario = loginControllers.efetuarLogin(email, senha);
   req.session.usuario = usuario;
-  res.redirect('/produtos');
 
+
+  res.redirect('/produtos');
+  
 });
 
 router.get('/produtos', verificarUsuarioLogado, function(req, res, next){

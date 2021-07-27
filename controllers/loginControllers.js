@@ -10,13 +10,14 @@ exports.criarUsuario = (nome, email, senha)=>{
 
 exports.efetuarLogin = (email, senha)=> {
     const usuario = usuarioModel.buscarPorEmail(email);
-
-    if(!usuario){
+    console.log(usuario);
+    
+    if(email!==usuario.email){
         throw new Error("Access denied");
     };
 
-    const { senhaCripto } = usuario;
-    const isValid = bcrypt.compareSync(senha, senhaCripto);
+    
+    const isValid = bcrypt.compareSync(senha, usuario.senhaCripto);
 
     if (!isValid){
     throw new Error('password invalid')

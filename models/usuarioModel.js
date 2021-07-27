@@ -18,6 +18,7 @@ exports.criarUmUsuario = (nome, email, senhaCripto)=> {
 };
 
 exports.buscarPorEmail = function(email){
-       usuarios.find(usuario => fs.readFileSync("./database/usuarios.json", "utf-8", JSON.stringify(usuarios)).email === email);
+      const usuarioEncontrado= usuarios.find(usuario => usuario.email === email);
+       return usuarioEncontrado;
 };
 
